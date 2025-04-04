@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Details - Government Exam Academy</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/exam-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Gov<span>Exam</span>Academy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.html" class="active">Exams</a></li>
+                    <li><a href="index.html#programs">Programs</a></li>
+                    <li><a href="index.html#toppers">Toppers</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="signin.html" class="btn btn-outline">Sign In</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Exams</a></li>
+                <li id="exam-breadcrumb">Exam Details</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="exam-detail-section">
+        <div class="container">
+            <div class="exam-detail-header">
+                <div class="exam-detail-title">
+                    <h1 id="exam-title">UPSC Civil Services Examination</h1>
+                    <span id="exam-tag" class="exam-tag central">Central</span>
+                </div>
+                <div class="exam-detail-actions">
+                    <button class="btn btn-outline"><i class="far fa-bookmark"></i> Save</button>
+                    <button class="btn btn-outline"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+            </div>
+
+            <div class="exam-detail-content">
+                <div class="exam-detail-main">
+                    <div class="exam-overview">
+                        <h2>Exam Overview</h2>
+                        <p id="exam-description">The Civil Services Examination (CSE) is a nationwide competitive examination in India conducted by the Union Public Service Commission for recruitment to various Civil Services of the Government of India, including the Indian Administrative Service (IAS), Indian Foreign Service (IFS), Indian Police Service (IPS), among others. It is conducted in three phases - a preliminary examination consisting of two objective-type papers, a main examination consisting of nine papers of conventional essay type, and a personality test (interview).</p>
+                        
+                        <div class="exam-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Educational Qualification</h4>
+                                    <p id="exam-qualification">Graduate from any recognized university</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-birthday-cake"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Age Limit</h4>
+                                    <p id="exam-age">21-32 years (with relaxation for reserved categories)</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-rupee-sign"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Salary Range</h4>
+                                    <p id="exam-salary">₹56,100 - ₹2,50,000 (Level 10-18)</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Exam Pattern</h4>
+                                    <p id="exam-pattern">Preliminary, Mains, and Interview</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exam-tabs">
+                        <div class="tab-header">
+                            <button class="tab-btn active" data-tab="dates">Exam Dates & Registration</button>
+                            <button class="tab-btn" data-tab="preparation">Preparation Guide</button>
+                            <button class="tab-btn" data-tab="training">Training Enrollment</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="dates-tab">
+                                <h3>Important Dates</h3>
+                                <div class="dates-table">
+                                    <div class="date-row">
+                                        <div class="date-label">Notification Release</div>
+                                        <div class="date-value" id="notification-date">February 2023</div>
+                                    </div>
+                                    <div class="date-row">
+                                        <div class="date-label">Online Application Starts</div>
+                                        <div class="date-value" id="application-start">February 2023</div>
+                                    </div>
+                                    <div class="date-row">
+                                        <div class="date-label">Last Date for Application</div>
+                                        <div class="date-value" id="application-end">March 2023</div>
+                                    </div>
+                                    <div class="date-row">
+                                        <div class="date-label">Preliminary Exam Date</div>
+                                        <div class="date-value" id="prelims-date">May 2023</div>
+                                    </div>
+                                    <div class="date-row">
+                                        <div class="date-label">Mains Exam Date</div>
+                                        <div class="date-value" id="mains-date">September 2023</div>
+                                    </div>
+                                    <div class="date-row">
+                                        <div class="date-label">Interview Date</div>
+                                        <div class="date-value" id="interview-date">January-February 2024</div>
+                                    </div>
+                                </div>
+
+                                <h3>Registration Process</h3>
+                                <div class="registration-steps">
+                                    <div class="step">
+                                        <div class="step-number">1</div>
+                                        <div class="step-content">
+                                            <h4>Visit Official Website</h4>
+                                            <p>Go to the official UPSC website <a href="https://www.upsc.gov.in/" target="_blank">www.upsc.gov.in</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">2</div>
+                                        <div class="step-content">
+                                            <h4>Register & Fill Application</h4>
+                                            <p>Create an account, fill in personal details, educational qualifications, and choose exam center</p>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">3</div>
+                                        <div class="step-content">
+                                            <h4>Upload Documents</h4>
+                                            <p>Upload photograph, signature, and required certificates as per specifications</p>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">4</div>
+                                        <div class="step-content">
+                                            <h4>Pay Application Fee</h4>
+                                            <p>Pay the application fee online through credit card, debit card, or net banking</p>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">5</div>
+                                        <div class="step-content">
+                                            <h4>Submit & Print</h4>
+                                            <p>Submit the application and take a printout for future reference</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="official-links">
+                                    <h3>Official Links</h3>
+                                    <a href="https://upsc.gov.in/" target="_blank" class="btn btn-primary" id="official-website"><i class="fas fa-external-link-alt"></i> Official Website</a>
+                                    <a href="#" class="btn btn-primary" id="notification-link"><i class="fas fa-file-pdf"></i> Official Notification</a>
+                                    <a href="#" class="btn btn-primary" id="apply-link"><i class="fas fa-edit"></i> Apply Online</a>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="preparation-tab">
+                                <h3>Preparation Strategy</h3>
+                                <div class="preparation-content">
+                                    <div class="prep-section">
+                                        <h4>Understanding the Exam Pattern</h4>
+                                        <p id="exam-pattern-detail">The UPSC CSE consists of three stages:</p>
+                                        <ul>
+                                            <li><strong>Preliminary Examination:</strong> Two objective-type papers (General Studies and CSAT)</li>
+                                            <li><strong>Main Examination:</strong> Nine papers of conventional essay type</li>
+                                            <li><strong>Personality Test:</strong> Interview to assess the candidate's suitability</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="prep-section">
+                                        <h4>Recommended Study Plan</h4>
+                                        <div class="study-plan">
+                                            <div class="plan-phase">
+                                                <h5>Phase 1: Foundation (3-4 months)</h5>
+                                                <ul>
+                                                    <li>Build basic understanding of all subjects</li>
+                                                    <li>Focus on NCERT books from Class 6-12</li>
+                                                    <li>Read newspapers daily and make notes</li>
+                                                    <li>Start preparing for CSAT</li>
+                                                </ul>
+                                            </div>
+                                            <div class="plan-phase">
+                                                <h5>Phase 2: Advanced Study (4-5 months)</h5>
+                                                <ul>
+                                                    <li>Move to standard reference books</li>
+                                                    <li>Focus on current affairs and their analysis</li>
+                                                    <li>Start answer writing practice for Mains</li>
+                                                    <li>Take regular mock tests for Prelims</li>
+                                                </ul>
+                                            </div>
+                                            <div class="plan-phase">
+                                                <h5>Phase 3: Revision & Practice (2-3 months)</h5>
+                                                <ul>
+                                                    <li>Revise all subjects thoroughly</li>
+                                                    <li>Take more mock tests for both Prelims and Mains</li>
+                                                    <li>Work on answer presentation and time management</li>
+                                                    <li>Prepare notes for quick revision</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prep-section">
+                                        <h4>Recommended Books</h4>
+                                        <div class="recommended-books">
+                                            <div class="book-category">
+                                                <h5>History</h5>
+                                                <ul>
+                                                    <li>NCERT Books (Class 6-12)</li>
+                                                    <li>India's Struggle for Independence by Bipan Chandra</li>
+                                                    <li>History of Modern India by Bipan Chandra</li>
+                                                </ul>
+                                            </div>
+                                            <div class="book-category">
+                                                <h5>Geography</h5>
+                                                <ul>
+                                                    <li>NCERT Books (Class 6-12)</li>
+                                                    <li>Certificate Physical and Human Geography by G.C. Leong</li>
+                                                    <li>Oxford School Atlas</li>
+                                                </ul>
+                                            </div>
+                                            <div class="book-category">
+                                                <h5>Polity</h5>
+                                                <ul>
+                                                    <li>Indian Polity by M. Laxmikanth</li>
+                                                    <li>Introduction to the Constitution of India by D.D. Basu</li>
+                                                </ul>
+                                            </div>
+                                            <div class="book-category">
+                                                <h5>Economy</h5>
+                                                <ul>
+                                                    <li>Indian Economy by Ramesh Singh</li>
+                                                    <li>Economic Survey (Latest)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prep-section">
+                                        <h4>Online Resources</h4>
+                                        <div class="online-resources">
+                                            <a href="#" class="resource-card">
+                                                <div class="resource-icon"><i class="fas fa-video"></i></div>
+                                                <div class="resource-content">
+                                                    <h5>Video Lectures</h5>
+                                                    <p>Free and premium video courses covering all subjects</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="resource-card">
+                                                <div class="resource-icon"><i class="fas fa-file-alt"></i></div>
+                                                <div class="resource-content">
+                                                    <h5>Mock Tests</h5>
+                                                    <p>Practice tests for Prelims and Mains with detailed solutions</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="resource-card">
+                                                <div class="resource-icon"><i class="fas fa-newspaper"></i></div>
+                                                <div class="resource-content">
+                                                    <h5>Current Affairs</h5>
+                                                    <p>Daily and monthly compilations of relevant current affairs</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="resource-card">
+                                                <div class="resource-icon"><i class="fas fa-users"></i></div>
+                                                <div class="resource-content">
+                                                    <h5>Discussion Forums</h5>
+                                                    <p>Connect with fellow aspirants and experts</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="training-tab">
+                                <h3>Training Programs for UPSC CSE</h3>
+                                <div class="training-content">
+                                    <div class="program-cards">
+                                        <div class="program-card">
+                                            <div class="program-header">
+                                                <h4>Comprehensive Course</h4>
+                                                <span class="program-tag">Most Popular</span>
+                                            </div>
+                                            <div class="program-details">
+                                                <div class="program-feature">
+                                                    <i class="fas fa-clock"></i>
+                                                    <span>12 Months</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-chalkboard-teacher"></i>
+                                                    <span>Classroom + Online</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-book-open"></i>
+                                                    <span>Complete Study Material</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-file-alt"></i>
+                                                    <span>Regular Tests & Feedback</span>
+                                                </div>
+                                            </div>
+                                            <div class="program-price">
+                                                <h5>₹1,25,000</h5>
+                                                <span>EMI options available</span>
+                                            </div>
+                                            <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
+                                        </div>
+
+                                        <div class="program-card">
+                                            <div class="program-header">
+                                                <h4>Prelims Special</h4>
+                                            </div>
+                                            <div class="program-details">
+                                                <div class="program-feature">
+                                                    <i class="fas fa-clock"></i>
+                                                    <span>4 Months</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-chalkboard-teacher"></i>
+                                                    <span>Online</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-book-open"></i>
+                                                    <span>Prelims Study Material</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-file-alt"></i>
+                                                    <span>100+ Mock Tests</span>
+                                                </div>
+                                            </div>
+                                            <div class="program-price">
+                                                <h5>₹45,000</h5>
+                                                <span>EMI options available</span>
+                                            </div>
+                                            <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
+                                        </div>
+
+                                        <div class="program-card">
+                                            <div class="program-header">
+                                                <h4>Mains Answer Writing</h4>
+                                            </div>
+                                            <div class="program-details">
+                                                <div class="program-feature">
+                                                    <i class="fas fa-clock"></i>
+                                                    <span>6 Months</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-chalkboard-teacher"></i>
+                                                    <span>Classroom + Online</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-book-open"></i>
+                                                    <span>Mains Study Material</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-file-alt"></i>
+                                                    <span>Daily Answer Writing</span>
+                                                </div>
+                                            </div>
+                                            <div class="program-price">
+                                                <h5>₹65,000</h5>
+                                                <span>EMI options available</span>
+                                            </div>
+                                            <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
+                                        </div>
+
+                                        <div class="program-card">
+                                            <div class="program-header">
+                                                <h4>Interview Guidance</h4>
+                                            </div>
+                                            <div class="program-details">
+                                                <div class="program-feature">
+                                                    <i class="fas fa-clock"></i>
+                                                    <span>2 Months</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-chalkboard-teacher"></i>
+                                                    <span>Classroom</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-book-open"></i>
+                                                    <span>Personality Development</span>
+                                                </div>
+                                                <div class="program-feature">
+                                                    <i class="fas fa-file-alt"></i>
+                                                    <span>Mock Interviews</span>
+                                                </div>
+                                            </div>
+                                            <div class="program-price">
+                                                <h5>₹35,000</h5>
+                                                <span>EMI options available</span>
+                                            </div>
+                                            <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="enrollment-form">
+                                        <h4>Request More Information</h4>
+                                        <form id="training-form">
+                                            <div class="form-row">
+                                                <div class="form-group">
+                                                    <label for="name">Full Name</label>
+                                                    <input type="text" id="name" name="name" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Email Address</label>
+                                                    <input type="email" id="email" name="email" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group">
+                                                    <label for="phone">Phone Number</label>
+                                                    <input type="tel" id="phone" name="phone" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="program">Interested Program</label>
+                                                    <select id="program" name="program" required>
+                                                        <option value="">Select a Program</option>
+                                                        <option value="comprehensive">Comprehensive Course</option>
+                                                        <option value="prelims">Prelims Special</option>
+                                                        <option value="mains">Mains Answer Writing</option>
+                                                        <option value="interview">Interview Guidance</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message">Message (Optional)</label>
+                                                <textarea id="message" name="message" rows="3"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit Request</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exam-detail-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Similar Exams</h3>
+                        <div class="similar-exams">
+                            <a href="#" class="similar-exam">
+                                <span class="exam-name">UPSC EPFO</span>
+                                <span class="exam-tag central">Central</span>
+                            </a>
+                            <a href="#" class="similar-exam">
+                                <span class="exam-name">UPSC CDS</span>
+                                <span class="exam-tag defense">Defense</span>
+                            </a>
+                            <a href="#" class="similar-exam">
+                                <span class="exam-name">UPPSC PCS</span>
+                                <span class="exam-tag state">State</span>
+                            </a>
+                            <a href="#" class="similar-exam">
+                                <span class="exam-name">MPSC</span>
+                                <span class="exam-tag state">State</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Success Stories</h3>
+                        <div class="success-stories">
+                            <div class="success-story">
+                                <div class="story-img"></div>
+                                <div class="story-content">
+                                    <h4>Priya Sharma</h4>
+                                    <p class="story-rank">AIR 5, UPSC CSE 2022</p>
+                                    <p class="story-quote">"The structured approach and mentorship were key to my success."</p>
+                                </div>
+                            </div>
+                            <div class="success-story">
+                                <div class="story-img"></div>
+                                <div class="story-content">
+                                    <h4>Rahul Verma</h4>
+                                    <p class="story-rank">AIR 12, UPSC CSE 2022</p>
+                                    <p class="story-quote">"The mock tests and personalized feedback helped me immensely."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Free Resources</h3>
+                        <div class="free-resources">
+                            <a href="#" class="resource-link">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>UPSC CSE Syllabus PDF</span>
+                            </a>
+                            <a href="#" class="resource-link">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Previous Year Question Papers</span>
+                            </a>
+                            <a href="#" class="resource-link">
+                                <i class="fas fa-book"></i>
+                                <span>Recommended Books List</span>
+                            </a>
+                            <a href="#" class="resource-link">
+                                <i class="fas fa-newspaper"></i>
+                                <span>Current Affairs Monthly PDF</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Need Help?</h3>
+                        <div class="help-widget">
+                            <p>Have questions about this exam or our training programs?</p>
+                            <div class="help-options">
+                                <a href="#" class="btn btn-outline btn-block">
+                                    <i class="fas fa-phone"></i> Call Us
+                                </a>
+                                <a href="#" class="btn btn-outline btn-block">
+                                    <i class="fas fa-comment"></i> Chat Now
+                                </a>
+                                <a href="#" class="btn btn-primary btn-block">
+                                    <i class="fas fa-calendar"></i> Book Counseling
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Gov<span>Exam</span>Academy</h2>
+                    <p>Guiding aspirants towards success in government examinations.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#programs">Programs</a></li>
+                        <li><a href="home.html">Exams</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-programs">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Civil Services</a></li>
+                        <li><a href="#">Banking Exams</a></li>
+                        <li><a href="#">Railway & SSC</a></li>
+                        <li><a href="#">Defense Services</a></li>
+                        <li><a href="#">Teaching Exams</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new exams and programs.</p>
+                    <form>
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Government Exam Academy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/exam-detail.js"></script>
+</body>
+</html>

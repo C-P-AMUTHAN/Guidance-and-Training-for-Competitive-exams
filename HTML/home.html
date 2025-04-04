@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Exams - Government Exam Academy</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Gov<span>Exam</span>Academy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.html" class="active">Exams</a></li>
+                    <li><a href="index.html#programs">Programs</a></li>
+                    <li><a href="index.html#toppers">Toppers</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="signin.html" class="btn btn-outline">Sign In</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="exam-hero">
+        <div class="container">
+            <div class="exam-hero-content">
+                <h1>Find the Perfect Government Exam</h1>
+                <p>Discover exams that match your age, education, and career goals.</p>
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="exam-search" placeholder="Search for exams...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="exam-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="age-filter">Age</label>
+                    <select id="age-filter">
+                        <option value="">All Ages</option>
+                        <option value="18-25">18-25 years</option>
+                        <option value="26-30">26-30 years</option>
+                        <option value="31-35">31-35 years</option>
+                        <option value="36-40">36-40 years</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="education-filter">Education</label>
+                    <select id="education-filter">
+                        <option value="">All Qualifications</option>
+                        <option value="10th">10th Pass</option>
+                        <option value="12th">12th Pass</option>
+                        <option value="graduate">Graduate</option>
+                        <option value="postgraduate">Post Graduate</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="salary-filter">Salary Range</label>
+                    <select id="salary-filter">
+                        <option value="">All Ranges</option>
+                        <option value="20k-30k">₹20,000 - ₹30,000</option>
+                        <option value="30k-50k">₹30,000 - ₹50,000</option>
+                        <option value="50k-80k">₹50,000 - ₹80,000</option>
+                        <option value="80k+">Above ₹80,000</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="location-filter">Location</label>
+                    <select id="location-filter">
+                        <option value="">All India</option>
+                        <option value="north">North India</option>
+                        <option value="south">South India</option>
+                        <option value="east">East India</option>
+                        <option value="west">West India</option>
+                        <option value="central">Central India</option>
+                    </select>
+                </div>
+                <button id="reset-filters" class="btn btn-outline">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="exam-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All Exams</button>
+                <button class="category-tab" data-category="central">Central Government</button>
+                <button class="category-tab" data-category="state">State Government</button>
+                <button class="category-tab" data-category="banking">Banking</button>
+                <button class="category-tab" data-category="defense">Defense</button>
+                <button class="category-tab" data-category="teaching">Teaching</button>
+            </div>
+
+            <div class="exam-list">
+                <!-- Central Government Exams -->
+                <div class="exam-card" data-category="central" data-age="21-32" data-education="graduate" data-salary="50k-80k" data-location="all">
+                    <div class="exam-card-header">
+                        <h3>UPSC Civil Services</h3>
+                        <span class="exam-tag central">Central</span>
+                    </div>
+                    <div class="exam-card-body">
+                        <div class="exam-info">
+                            <div class="info-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Graduate</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>21-32 years</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹56,100 - ₹2,50,000</span>
+                            </div>
+                        </div>
+                        <p>The Civil Services Examination is conducted by the UPSC to recruit officers for the IAS, IPS, IFS and other allied services.</p>
+                        <a href="exam-detail.html?exam=upsc-cse" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="exam-card" data-category="central" data-age="18-30" data-education="12th" data-salary="30k-50k" data-location="all">
+                    <div class="exam-card-header">
+                        <h3>SSC CGL</h3>
+                        <span class="exam-tag central">Central</span>
+                    </div>
+                    <div class="exam-card-body">
+                        <div class="exam-info">
+                            <div class="info-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Graduate</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>18-30 years</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹35,400 - ₹1,12,400</span>
+                            </div>
+                        </div>
+                        <p>The Combined Graduate Level Examination is conducted by the Staff Selection Commission for various Group B and Group C posts.</p>
+                        <a href="exam-detail.html?exam=ssc-cgl" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Banking Exams -->
+                <div class="exam-card" data-category="banking" data-age="20-30" data-education="graduate" data-salary="30k-50k" data-location="all">
+                    <div class="exam-card-header">
+                        <h3>IBPS PO</h3>
+                        <span class="exam-tag banking">Banking</span>
+                    </div>
+                    <div class="exam-card-body">
+                        <div class="exam-info">
+                            <div class="info-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Graduate</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>20-30 years</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹40,000 - ₹70,000</span>
+                            </div>
+                        </div>
+                        <p>The Institute of Banking Personnel Selection conducts this exam to recruit Probationary Officers for various public sector banks.</p>
+                        <a href="exam-detail.html?exam=ibps-po" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+
+                <!-- State Government Exams -->
+                <div class="exam-card" data-category="state" data-age="21-35" data-education="graduate" data-salary="50k-80k" data-location="north">
+                    <div class="exam-card-header">
+                        <h3>UPPSC PCS</h3>
+                        <span class="exam-tag state">State</span>
+                    </div>
+                    <div class="exam-card-body">
+                        <div class="exam-info">
+                            <div class="info-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Graduate</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>21-35 years</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹56,100 - ₹1,77,500</span>
+                            </div>
+                        </div>
+                        <p>The Uttar Pradesh Public Service Commission conducts this exam to recruit officers for various administrative positions in the state.</p>
+                        <a href="exam-detail.html?exam=uppsc-pcs" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Defense Exams -->
+                <div class="exam-card" data-category="defense" data-age="19-25" data-education="12th" data-salary="50k-80k" data-location="all">
+                    <div class="exam-card-header">
+                        <h3>NDA</h3>
+                        <span class="exam-tag defense">Defense</span>
+                    </div>
+                    <div class="exam-card-body">
+                        <div class="exam-info">
+                            <div class="info-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>12th Pass</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>16.5-19.5 years</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹56,100 - ₹1,77,500</span>
+                            </div>
+                        </div>
+                        <p>The National Defence Academy exam is conducted by UPSC for admission to the Army, Navy and Air Force wings of the NDA.</p>
+                        <a href="exam-detail.html?exam=nda" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Teaching Exams -->
+                <div class="exam-card" data-category="teaching" data-age="21-35" data-education="graduate" data-salary="30k-50k" data-location="all">
+                    <div class="exam-card-header">
+                        <h3>CTET</h3>
+                        <span class="exam-tag teaching">Teaching</span>
+                    </div>
+                    <div class="exam-card-body">
+                        <div class="exam-info">
+                            <div class="info-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>B.Ed</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>No Age Limit</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-rupee-sign"></i>
+                                <span>₹35,000 - ₹45,000</span>
+                            </div>
+                        </div>
+                        <p>The Central Teacher Eligibility Test is conducted by CBSE for determining the eligibility for teaching positions in central government schools.</p>
+                        <a href="exam-detail.html?exam=ctet" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more">
+                <button id="load-more-btn" class="btn btn-secondary">Load More Exams</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Gov<span>Exam</span>Academy</h2>
+                    <p>Guiding aspirants towards success in government examinations.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#programs">Programs</a></li>
+                        <li><a href="home.html">Exams</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-programs">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Civil Services</a></li>
+                        <li><a href="#">Banking Exams</a></li>
+                        <li><a href="#">Railway & SSC</a></li>
+                        <li><a href="#">Defense Services</a></li>
+                        <li><a href="#">Teaching Exams</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new exams and programs.</p>
+                    <form>
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Government Exam Academy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/home.js"></script>
+</body>
+</html>
